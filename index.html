@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Dashboard | Uang Kas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesdesign" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Responsive datatable examples -->
+        <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- DataTables -->
+        <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Dropzone Plugins css -->
+        <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body data-topbar="colored" data-layout="horizontal" data-layout-size="boxed">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="container-fluid">
+                        <div class="float-right">
+
+                            <div class="dropdown d-inline-block">
+                                <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                                    <span class="d-none d-sm-inline-block ml-1">Admin</span>
+                                    <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <!-- item-->
+                                    <a class="dropdown-item" href="index2.html"><i class="far fa-user font-size-16 align-middle mr-1"></i> Admin</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-logout font-size-16 align-middle mr-1"></i> Logout</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm-dark.png" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-dark.png" alt="" height="20">
+                                </span>
+                            </a>
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm-light.png" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="" height="20">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm mr-2 font-size-16 d-lg-none header-item waves-effect waves-light" data-toggle="collapse" data-target="#topnav-menu-content">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+
+                        <div class="topnav">
+                            <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+                                <div class="collapse navbar-collapse" id="topnav-menu-content">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">
+                                                Dashboard
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+    
+            </header>
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    
+                    <!-- Page-Title -->
+                    <div class="page-title-box">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4 class="page-title mb-1"></h4>
+                                    <!-- <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item active">Welcome to Xoric Dashboard</li>
+                                    </ol> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end page title end breadcrumb -->
+
+                    <div class="page-content-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h5>Total Balance</h5>
+                                                    <h4>Rp. 0</h4>
+                                                </div>
+
+                                                <div class="col-5 ml-auto">
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h5>Money In</h5>
+                                                    <h4>Rp. 0</h4>
+                                                </div>
+
+                                                <div class="col-5 ml-auto">
+                                                    <div>
+                                                        <div class="mt-4">
+                                                        <button type="button" class="btn btn-primary btn-sm waves-effect waves-light" data-toggle="modal" data-target="#myModal">Masukan uang <i class="mdi mdi-arrow-right ml-1"></i></button>
+                                                            <!-- sample modal content -->
+                                                            <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title mt-0" id="myModalLabel">Masukan Uang</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <div class="form-group row">
+                                                                                <label for="example-text-input" class="col-md-2 col-form-label">Title</label>
+                                                                                <div class="col-md-10">
+                                                                                    <input class="form-control" type="text" id="example-text-input">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label for="example-number-input" class="col-md-2 col-form-label">Money Amount</label>
+                                                                                <div class="col-md-10">
+                                                                                    <input class="form-control" type="number" id="example-number-input">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label for="example-text-input" class="col-md-2 col-form-label">Reason</label>
+                                                                                <div class="col-md-10">
+                                                                                    <input class="form-control" type="text" id="example-text-input">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label for="example-text-input" class="col-md-2 col-form-label">Image</label>
+                                                                            </div>
+                                                                            <div>
+                                                                                <form action="#" class="dropzone">
+                                                                                    <div class="fallback">
+                                                                                        <input name="file" type="file" multiple="multiple">
+                                                                                    </div>
+                                                                                    <div class="dz-message needsclick">
+                                                                                        <div class="mb-3">
+                                                                                            <i class="display-4 text-muted mdi mdi-cloud-upload-outline"></i>
+                                                                                        </div>
+                                                                                        
+                                                                                        <h4>Drop files here to upload</h4>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                                                                            <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+                                                                        </div>
+                                                                    </div><!-- /.modal-content -->
+                                                                </div><!-- /.modal-dialog -->
+                                                            </div><!-- /.modal -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h5>Money Out</h5>
+                                                    <h4>Rp. 0</h4>
+                                                </div>
+
+                                                <div class="col-5 ml-auto">
+                                                    <div>
+                                                        <div class="mt-4">
+                                                        <button type="button" class="btn btn-primary btn-sm waves-effect waves-light" data-toggle="modal" data-target="#myModal1">Ambil uang <i class="mdi mdi-arrow-right ml-1"></i></button>
+                                                            <!-- sample modal content -->
+                                                            <div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title mt-0" id="myModalLabel">Ambil Uang</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <div class="form-group row">
+                                                                                <label for="example-text-input" class="col-md-2 col-form-label">Title</label>
+                                                                                <div class="col-md-10">
+                                                                                    <input class="form-control" type="text" id="example-text-input">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label for="example-number-input" class="col-md-2 col-form-label">Money Amount</label>
+                                                                                <div class="col-md-10">
+                                                                                    <input class="form-control" type="number" id="example-number-input">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label for="example-text-input" class="col-md-2 col-form-label">Reason</label>
+                                                                                <div class="col-md-10">
+                                                                                    <input class="form-control" type="text" id="example-text-input">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label for="example-text-input" class="col-md-2 col-form-label">Image</label>
+                                                                            </div>
+                                                                            <div>
+                                                                                <form action="#" class="dropzone">
+                                                                                    <div class="fallback">
+                                                                                        <input name="file" type="file" multiple="multiple">
+                                                                                    </div>
+                                                                                    <div class="dz-message needsclick">
+                                                                                        <div class="mb-3">
+                                                                                            <i class="display-4 text-muted mdi mdi-cloud-upload-outline"></i>
+                                                                                        </div>
+                                                                                        
+                                                                                        <h4>Drop files here to upload</h4>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                                                                            <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+                                                                        </div>
+                                                                    </div><!-- /.modal-content -->
+                                                                </div><!-- /.modal-dialog -->
+                                                            </div><!-- /.modal -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+            
+                                            <h4 class="header-title">Money In</h4>
+                                            <!-- <p class="card-title-desc">
+                                            </p> -->
+            
+                                            <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Num</th>
+                                                        <th>Money</th>
+                                                        <th>Date</th>
+                                                        <th>Detail</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Rp. 100000</td>
+                                                        <td>08 - 04 - 2020</td>
+                                                        <td>
+                                                            <!-- Small modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-center1">Klik untuk melihat detail</button>
+                                                            <div class="modal fade bs-example-modal-center1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title mt-0">Detail</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <p class="float-left">Title</p><p class="float-right">Nabung Cepe</p><br><br>
+                                                                            <p class="float-left">Money</p><p class="float-right">Rp. 100000</p> <br><br>
+                                                                            <p class="float-left">Date</p><p class="float-right">10 - 04 - 2020</p><br><br>
+                                                                            <p class="float-left">Reason</p><p class="float-right">Mau belajar Nabung</p><br><br>
+                                                                            <p style="text-align: center;">Image</p>
+                                                                            
+                                                                        </div>
+                                                                    </div><!-- /.modal-content -->
+                                                                </div><!-- /.modal-dialog -->
+                                                            </div><!-- /.modal -->
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Rp. 50000</td>
+                                                        <td>09 - 04 - 2020</td>
+                                                        <td>
+                                                            <!-- Small modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-center2">Klik untuk melihat detail</button>
+                                                            <div class="modal fade bs-example-modal-center2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title mt-0">Detail</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <p class="float-left">Title</p><p class="float-right">Nabung Cepe</p><br><br>
+                                                                            <p class="float-left">Money</p><p class="float-right">Rp. 50000</p> <br><br>
+                                                                            <p class="float-left">Date</p><p class="float-right">10 - 04 - 2020</p><br><br>
+                                                                            <p class="float-left">Reason</p><p class="float-right">Mau belajar Nabung</p><br><br>
+                                                                            <p style="text-align: center;">Image</p>
+                                                                            
+                                                                        </div>
+                                                                    </div><!-- /.modal-content -->
+                                                                </div><!-- /.modal-dialog -->
+                                                            </div><!-- /.modal -->
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Rp. 1000000</td>
+                                                        <td>10 - 04 - 2020</td>
+                                                        <td>
+                                                            <!-- Small modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-center3">Klik untuk melihat detail</button>
+                                                            <div class="modal fade bs-example-modal-center3" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title mt-0">Detail</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <p class="float-left">Title</p><p class="float-right">Nabung Cepe</p><br><br>
+                                                                            <p class="float-left">Money</p><p class="float-right">Rp. 100000</p> <br><br>
+                                                                            <p class="float-left">Date</p><p class="float-right">10 - 04 - 2020</p><br><br>
+                                                                            <p class="float-left">Reason</p><p class="float-right">Mau belajar Nabung</p><br><br>
+                                                                            <p style="text-align: center;">Image</p>
+                                                                            
+                                                                        </div>
+                                                                    </div><!-- /.modal-content -->
+                                                                </div><!-- /.modal-dialog -->
+                                                            </div><!-- /.modal -->
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+            
+                                        </div>
+                                    </div>
+                                </div> <!-- end col -->
+                                <div class="col-xl-6 col-lg-6 col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+            
+                                            <h4 class="header-title">Money Out</h4>
+                                            <!-- <p class="card-title-desc">
+                                            </p> -->
+            
+                                            <table id="datatable1" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Num</th>
+                                                        <th>Money</th>
+                                                        <th>Date</th>
+                                                        <th>Detail</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Rp. 100000</td>
+                                                        <td>08 - 04 - 2020</td>
+                                                        <td>
+                                                            <!-- Small modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-center">Klik untuk melihat detail</button>
+                                                            <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title mt-0">Detail</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <p class="float-left">Title</p><p class="float-right">Nyomot Cepe</p><br><br>
+                                                                            <p class="float-left">Money</p><p class="float-right">Rp. 100000</p> <br><br>
+                                                                            <p class="float-left">Date</p><p class="float-right">08 - 04 - 2020</p><br><br>
+                                                                            <p class="float-left">Reason</p><p class="float-right">Mau belajar Nabung</p><br><br>
+                                                                            <p style="text-align: center;">Image</p>
+                                                                            
+                                                                        </div>
+                                                                    </div><!-- /.modal-content -->
+                                                                </div><!-- /.modal-dialog -->
+                                                            </div><!-- /.modal -->
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Rp. 50000</td>
+                                                        <td>09 - 04 - 2020</td>
+                                                        <td>
+                                                            <!-- Small modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-center">Klik untuk melihat detail</button>
+                                                            <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title mt-0">Detail</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <p class="float-left">Title</p><p class="float-right">Nyomot Cepe</p><br><br>
+                                                                            <p class="float-left">Money</p><p class="float-right">Rp. 50000</p> <br><br>
+                                                                            <p class="float-left">Date</p><p class="float-right">09 - 04 - 2020</p><br><br>
+                                                                            <p class="float-left">Reason</p><p class="float-right">Mau belajar Nabung</p><br><br>
+                                                                            <p style="text-align: center;">Image</p>
+                                                                            
+                                                                        </div>
+                                                                    </div><!-- /.modal-content -->
+                                                                </div><!-- /.modal-dialog -->
+                                                            </div><!-- /.modal -->
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Rp. 1000000</td>
+                                                        <td>10 - 04 - 2020</td>
+                                                        <td>
+                                                            <!-- Small modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-center">Klik untuk melihat detail</button>
+                                                            <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title mt-0">Detail</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <p class="float-left">Title</p><p class="float-right">Nabung Cepe</p><br><br>
+                                                                            <p class="float-left">Money</p><p class="float-right">Rp. 1000000</p> <br><br>
+                                                                            <p class="float-left">Date</p><p class="float-right">10 - 04 - 2020</p><br><br>
+                                                                            <p class="float-left">Reason</p><p class="float-right">Mau belajar Nabung</p><br><br>
+                                                                            <p style="text-align: center;">Image</p>
+                                                                            
+                                                                        </div>
+                                                                    </div><!-- /.modal-content -->
+                                                                </div><!-- /.modal-dialog -->
+                                                            </div><!-- /.modal -->
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+            
+                                        </div>
+                                    </div>
+                                </div> <!-- end col -->
+                            </div> <!-- end row -->
+                            <!-- end row -->
+
+                        </div> <!-- container-fluid -->
+                    </div>
+                    <!-- end page-content-wrapper -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                2020 © Uang Kas SPA.
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-right d-none d-sm-block">
+                                    Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <script src="https://unicons.iconscout.com/release/v2.0.1/script/monochrome/bundle.js"></script>
+        
+        <!-- Required datatable js -->
+        <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <!-- Buttons examples -->
+        <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+        <script src="assets/libs/jszip/jszip.min.js"></script>
+        <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+        <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+        <!-- Responsive examples -->
+        <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+        <!-- Datatable init js -->
+        <script src="assets/js/pages/datatables.init.js"></script>
+
+        <!-- dropzone js -->
+        <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
+
+        <script src="assets/js/app.js"></script>
+        <script>
+            $(document).ready( function () {
+                $('#datatable1').DataTable();
+            } );
+        </script>
+    </body>
+</html>
